@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{
+  font-family: 'Quicksand', sans-serif;
+}
+
+.app {
+  position: fixed; 
+  bottom: 0; 
+  right: 100px;
+  border-width: 2px;
+  border-style: solid;
+  border-image:
+    linear-gradient(
+      to bottom, 
+      #b2d2d3, 
+      #79d079
+    ) 1 100%;
+  padding: 10 5px;
+  
+}
+
+.gradient{
+  border:0;
+  border-image:
+  linear-gradient(
+    to bottom, 
+    #b2d2d3, 
+    #79d079
+  ) 1 100%;
+padding: 10 5px;
+}
+
+#chatWithUs :hover {
+  color: 
+  linear-gradient(
+    to bottom, 
+    #b2d2d3, 
+    #79d079
+  ) 1 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Avatar{
+  position:relative;
+  top: calc(50% - 10px); /* 50% - 3/4 of icon height
+} 
+*/
+#chatWithUs{
+  color: #79d079;
+  font-size: medium;
+}
+
+#Chat{
+  height: 460px;
+  clear: both;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.SendMessages{
+  height:auto;
+  min-height: 50px;
+  height:auto !important;        /* for IE as it does not support min-height */
+}
+
+.RecievedMessages{
+  height:auto;
+  min-height:60px;
+  height:auto !important;        /* for IE as it does not support min-height */
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(215, 255, 253); 
+  border-radius: 2px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(140, 255, 249); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d5fff0; 
+}
